@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwitchNotify - Legal Documentation</title>
+    <meta name="description" content="Legal documentation for TwitchNotify Chrome extension - Privacy Policy and Terms of Service">
+    <style>
+        :root {
+            --bg-primary: #0e0e10;
+            --bg-secondary: #18181b;
+            --bg-card: #1f1f23;
+            --text-primary: #efeff1;
+            --text-secondary: #adadb8;
+            --accent: #9146ff;
+            --accent-light: rgba(145, 70, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .logo svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--accent);
+        }
+
+        .logo h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-card);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .links a:hover {
+            background: var(--accent-light);
+            border-color: var(--accent);
+        }
+
+        .links a svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .feature {
+            padding: 16px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .feature span {
+            margin-right: 8px;
+        }
+
+        .privacy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 100px;
+            font-size: 14px;
+            color: #22c55e;
+            margin-bottom: 16px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg viewBox="0 0 24 24">
+                <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/>
+            </svg>
+            <h1>TwitchNotify</h1>
+        </div>
+
+        <p class="tagline">Never miss a live stream from your favorite Twitch streamers.</p>
+
+        <div class="card">
+            <h2>Legal Documents</h2>
+            <div class="links">
+                <a href="privacy.md">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                    Privacy Policy
+                </a>
+                <a href="terms.md">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    Terms of Service
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature"><span>🔔</span> Real-time notifications</div>
+                <div class="feature"><span>📺</span> Live status & viewers</div>
+                <div class="feature"><span>📥</span> Import from Twitch</div>
+                <div class="feature"><span>☁️</span> Google Drive sync</div>
+                <div class="feature"><span>🎨</span> Custom themes</div>
+                <div class="feature"><span>🌍</span> Multi-language</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="privacy-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Privacy-first
+            </div>
+            <p style="color: var(--text-secondary); font-size: 15px;">
+                No analytics, no tracking, no data collection. All your data stays on your device.
+            </p>
+        </div>
+
+        <footer>
+            <p>© 2026 TwitchNotify by <a href="https://github.com/Fradack">Fradack</a>. All rights reserved.</p>
+            <p style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">
+                TwitchNotify is not affiliated with Twitch Interactive, Inc.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
